@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — FRESH ARCHITECTURAL THINKING</title>
+  <meta name="description" content="About Fresh Architectural Thinking: an independent journal of interior design and architecture. Our mission, editorial approach, and the people behind the publication.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About — Fresh Architectural Thinking">
+  <meta property="og:description" content="An independent journal of interior design and architecture. Learn about our editorial approach and the team behind the publication.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fresharchitecturalthinking.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://fresharchitecturalthinking.com/about.html">
+  <!-- Fonts & reset (same as index) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- design tokens (identical to index) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1e1c;
+      --ink-soft: #2c312e;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --border-light: #e2ded8;
+      --border-mid: #cfc9c0;
+      --accent: #7c6e5c;
+      --accent-deep: #5f5343;
+      --muted: #6b6a65;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --max-width: 1280px;
+      --article-width: 720px;
+    }
+
+    html {
+      background: var(--paper);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+      font-weight: 400;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ---------- utility ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 1.25rem; }
+      .article-container { padding: 0 1rem; }
+    }
+
+    /* ---------- header (same as index) ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border-light);
+      background: var(--paper);
+      padding: 1.75rem 0 0.5rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.75rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .main-nav a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .header-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.25rem;
+      padding: 1rem 0 0.75rem;
+      border-top: 1px solid var(--border-light);
+      font-size: 0.8rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .header-meta .editor {
+      font-style: italic;
+    }
+
+    /* ---------- about page layout ---------- */
+    .about-hero {
+      max-width: var(--article-width);
+      margin: 3rem auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .about-hero h1 {
+      font-family: var(--serif);
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    .about-hero .subhead {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 620px;
+      margin-bottom: 2rem;
+    }
+
+    .about-hero img {
+      width: 100%;
+      height: auto;
+      margin: 2rem 0 1.5rem;
+      border-radius: 2px;
+      background: var(--paper-warm);
+    }
+
+    .about-section {
+      max-width: var(--article-width);
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .about-section h2 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    .about-section h3 {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 2rem 0 0.75rem;
+    }
+
+    .about-section p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--ink-soft);
+      margin-bottom: 1.25rem;
+    }
+
+    .about-section ul {
+      margin: 0.5rem 0 1.5rem 1.5rem;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--ink-soft);
+    }
+
+    .about-section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .about-section blockquote {
+      border-left: 2px solid var(--border-mid);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+
+    .about-section blockquote footer {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-style: normal;
+      color: var(--muted);
+      margin-top: 0.75rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .about-hero h1 { font-size: 2.25rem; }
+      .about-hero .subhead { font-size: 1.1rem; }
+    }
+
+    .team-member {
+      border-top: 1px solid var(--border-light);
+      padding-top: 1.25rem;
+    }
+
+    .team-member h4 {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+
+    .team-member .role {
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .team-member p {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--ink-soft);
+    }
+
+    .info-box {
+      background: var(--paper-warm);
+      padding: 2rem 2rem;
+      border-radius: 2px;
+      margin: 2.5rem 0;
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+    }
+
+    .info-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ---------- footer (same as index) ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border-light);
+      background: var(--paper-warm);
+      padding: 3rem 0 2.5rem;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand + p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h5 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent-deep);
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--muted);
+      gap: 1rem;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--ink);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      z-index: 100;
+      font-size: 0.85rem;
+    }
+
+    .skip-link:focus {
+      left: 0;
+    }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          FRESH<br>ARCHITECTURAL<br>THINKING
+          <span>INTERIOR &amp; ARCHITECTURE JOURNAL</span>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-meta">
+        <span class="editor">Editor: Elena Marchetti</span>
+        <span>Independent publication · Est. 2018</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main">
+    <!-- HERO -->
+    <div class="about-hero">
+      <h1>About the Journal</h1>
+      <p class="subhead">A quiet corner of the internet for people who care about how buildings and interiors shape daily life.</p>
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80" alt="A calm, light-filled interior with a large window, wooden floor and minimal furniture" loading="lazy">
+    </div>
+
+    <!-- MISSION -->
+    <section class="about-section">
+      <h2>Our Mission</h2>
+      <p>Fresh Architectural Thinking was founded in 2018 as an antidote to the fast, shallow content that dominates design media. We believe that architecture and interior design are not just about aesthetics — they are about how we live, how we feel, and how we relate to the world around us. Our goal is to publish writing that is thoughtful, practical, and deeply researched, without ever being dry.</p>
+      <p>We are independent. We do not accept sponsored posts, and we do not chase trends. Every article is written by our small editorial team, and we take the time to verify facts, interview practitioners, and consider the long view. Whether you are a homeowner planning a renovation, a student of architecture, or simply someone who loves thoughtful spaces, we hope you find something useful here.</p>
+    </section>
+
+    <!-- WHAT WE COVER -->
+    <section class="about-section">
+      <h2>What We Cover</h2>
+      <p>Our articles span the full spectrum of the built environment — from the scale of a city block to the curve of a door handle. We focus on:</p>
+      <ul>
+        <li><strong>Interior Design</strong> — colour, texture, furniture, and the psychology of rooms.</li>
+        <li><strong>Architecture</strong> — residential and public buildings, facades, and the design process.</li>
+        <li><strong>Materials</strong> — honest, sustainable, and beautiful materials for every surface.</li>
+        <li><strong>Space Planning</strong> — floor plans, circulation, light, and how to make a space work.</li>
+        <li><strong>Lighting</strong> — natural and artificial light, layered schemes, and the science of seeing.</li>
+        <li><strong>Home Design</strong> — kitchens, bathrooms, bedrooms, and the details that matter daily.</li>
+      </ul>
+      <p>We publish long-form essays, practical guides, interviews, and occasional case studies. New articles appear every week, and our Sunday newsletter, <em>Design Letter</em>, delivers one thoughtful piece directly to your inbox.</p>
+    </section>
+
+    <!-- EDITORIAL APPROACH -->
+    <section class="about-section">
+      <h2>Editorial Approach</h2>
+      <p>We write for readers who want to understand, not just consume. That means we avoid jargon where plain language works, and we explain the “why” behind every recommendation. Our articles are structured to be read in one sitting, but we also include enough depth that you can return to them as a reference.</p>
+      <p>We are not afraid to be critical. If a trend is shallow, we will say so. If a material is overrated, we will explain why. But we also celebrate what is good: the quiet intelligence of a well-planned home, the craft of a beautifully made window, the pleasure of a room that simply feels right.</p>
+      <blockquote>
+        “We believe good design is not about trends. It is about paying attention — to light, to material, to the way a door handle feels in your hand. This journal is our attempt to slow down and look closely.”
+        <footer>— Elena Marchetti, Editor</footer>
+      </blockquote>
+    </section>
+
+    <!-- TEAM -->
+    <section class="about-section">
+      <h2>The People Behind the Journal</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <h4>Elena Marchetti</h4>
+          <div class="role">Editor &amp; Founder</div>
+          <p>Elena trained as an architect in Milan and worked in residential practice for a decade before turning to writing. She founded Fresh Architectural Thinking to create a space for slower, more thoughtful design journalism. She writes about architecture, space planning, and the intersection of design and daily life.</p>
+        </div>
+        <div class="team-member">
+          <h4>Clara Nyström</h4>
+          <div class="role">Senior Editor, Interiors</div>
+          <p>Clara is an interior designer and writer based in Stockholm. She has a particular interest in colour, textiles, and the ways small domestic details — a well-placed lamp, a smooth handle — can transform a home. She leads our interior design coverage and edits the Home Design section.</p>
+        </div>
+        <div class="team-member">
+          <h4>Jonas Weber</h4>
+          <div class="role">Contributing Editor, Materials &amp; Architecture</div>
+          <p>Jonas is a Berlin-based architect and researcher. He writes about material innovation, sustainable construction, and the poetics of building. His work often explores the tension between craft and industry, and he is a passionate advocate for honest, local materials.</p>
+        </div>
+        <div class="team-member">
+          <h4>Mira Patel</h4>
+          <div class="role">Contributing Editor, Lighting &amp; Wellbeing</div>
+          <p>Mira is a lighting designer and environmental psychologist. She writes about how light affects our mood, sleep, and productivity, and offers practical advice for improving the lighting in any home. She is based in London and lectures on lighting design at a leading art school.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPARENCY -->
+    <section class="about-section">
+      <div class="info-box">
+        <h3>Transparency &amp; Funding</h3>
+        <p>Fresh Architectural Thinking is reader-supported. We earn revenue through optional paid subscriptions to our newsletter, and occasionally through affiliate links to books or products we genuinely recommend. Affiliate links are always clearly disclosed at the top of the relevant article. We do not accept sponsored content, and we do not allow advertisers to influence our editorial decisions.</p>
+        <p>All articles are written by our editorial team. If we ever publish a guest contribution, it will be clearly marked, and we will only work with writers whose values align with our own.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT & CORRECTIONS -->
+    <section class="about-section">
+      <h2>Contact &amp; Corrections</h2>
+      <p>We welcome thoughtful correspondence, corrections, and pitches. If you spot an error, please let us know — we are committed to accuracy and will correct mistakes promptly.</p>
+      <p>General enquiries and pitches: <strong>editor@fresharchitecturalthinking.com</strong></p>
+      <p>Permissions and syndication: <strong>rights@fresharchitecturalthinking.com</strong></p>
+      <p>We aim to respond within five working days.</p>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">FRESH<br>ARCHITECTURAL<br>THINKING</div>
+          <p>An independent journal of interior design and architecture. Published since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Interior Design</a></li>
+            <li><a href="index.html">Architecture</a></li>
+            <li><a href="index.html">Home Design</a></li>
+            <li><a href="index.html">Materials</a></li>
+            <li><a href="index.html">Lighting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Fresh Architectural Thinking. All rights reserved.</span>
+        <span>Made with care for readers and the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- minimal script (nothing required, but kept for consistency) -->
+  <script>
+    (function() {
+      // No interactive elements on the About page require JavaScript.
+      // The navigation links are static and the content is all visible.
+      // This script is intentionally minimal to keep the page lightweight.
+    })();
+  </script>
+</body>
+</html>

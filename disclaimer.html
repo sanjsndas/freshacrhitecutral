@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer — FRESH ARCHITECTURAL THINKING</title>
+  <meta name="description" content="Disclaimer for Fresh Architectural Thinking. Important information about the content, external links, and limitations of liability.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fresharchitecturalthinking.com/disclaimer.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Disclaimer — FRESH ARCHITECTURAL THINKING">
+  <meta property="og:description" content="Important information about the content, external links, and limitations of liability.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fresharchitecturalthinking.com/disclaimer.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- design tokens (shared with index) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1e1c;
+      --ink-soft: #2c312e;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --border-light: #e2ded8;
+      --border-mid: #cfc9c0;
+      --accent: #7c6e5c;
+      --accent-deep: #5f5343;
+      --muted: #6b6a65;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --max-width: 1280px;
+      --article-width: 720px;
+    }
+
+    html {
+      background: var(--paper);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+      font-weight: 400;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ---------- utility ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 1.25rem; }
+      .article-container { padding: 0 1rem; }
+    }
+
+    /* ---------- header ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border-light);
+      background: var(--paper);
+      padding: 1.75rem 0 0.5rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.75rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .main-nav a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .main-nav a.active {
+      border-bottom-color: var(--ink);
+    }
+
+    .header-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.25rem;
+      padding: 1rem 0 0.75rem;
+      border-top: 1px solid var(--border-light);
+      font-size: 0.8rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .header-meta .editor {
+      font-style: italic;
+    }
+
+    /* ---------- page title ---------- */
+    .page-header {
+      max-width: var(--article-width);
+      margin: 3.5rem auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .page-header h1 {
+      font-family: var(--serif);
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .page-header .subhead {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    .page-header .last-updated {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 2.2rem; }
+      .page-header { margin-top: 2.5rem; }
+    }
+
+    /* ---------- legal / content ---------- */
+    .legal-content {
+      max-width: var(--article-width);
+      margin: 0 auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .legal-content section {
+      margin-bottom: 2.5rem;
+    }
+
+    .legal-content h2 {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+      color: var(--ink);
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 0.5rem;
+    }
+
+    .legal-content h3 {
+      font-family: var(--sans);
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin: 1.75rem 0 0.75rem;
+      color: var(--ink-soft);
+    }
+
+    .legal-content p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-soft);
+      margin-bottom: 1.25rem;
+    }
+
+    .legal-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-content ul, .legal-content ol {
+      margin: 0 0 1.5rem 1.5rem;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-soft);
+    }
+
+    .legal-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content a {
+      border-bottom: 1px solid var(--border-mid);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .legal-content a:hover {
+      color: var(--accent-deep);
+      border-bottom-color: var(--accent-deep);
+    }
+
+    .legal-content .highlight-box {
+      background: var(--paper-warm);
+      border-left: 3px solid var(--accent-deep);
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+      border-radius: 2px;
+      font-size: 0.98rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    .legal-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ---------- footer ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border-light);
+      background: var(--paper-warm);
+      padding: 3rem 0 2.5rem;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand + p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h5 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent-deep);
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--muted);
+      gap: 1rem;
+    }
+
+    /* skip link */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--ink);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      z-index: 100;
+      font-size: 0.85rem;
+    }
+
+    .skip-link:focus {
+      left: 0;
+    }
+
+    /* responsive nav */
+    @media (max-width: 600px) {
+      .main-nav ul { gap: 1rem; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          FRESH<br>ARCHITECTURAL<br>THINKING
+          <span>INTERIOR &amp; ARCHITECTURE JOURNAL</span>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html" class="active">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-meta">
+        <span class="editor">Editor: Elena Marchetti</span>
+        <span>Independent publication · Est. 2018</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main">
+    <!-- page title -->
+    <div class="page-header">
+      <h1>Disclaimer</h1>
+      <p class="subhead">Important information about the content on this website, external links, and limitations of liability.</p>
+      <p class="last-updated">Last updated: 1 March 2025</p>
+    </div>
+
+    <!-- disclaimer content -->
+    <div class="legal-content">
+      <section>
+        <h2>1. General information</h2>
+        <p>The information provided by Fresh Architectural Thinking ("we", "us", or "our") on <a href="https://fresharchitecturalthinking.com">fresharchitecturalthinking.com</a> (the "Site") is for general informational and educational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.</p>
+        <div class="highlight-box">
+          <p>Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the Site or reliance on any information provided on the Site. Your use of the Site and your reliance on any information on the Site is solely at your own risk.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. External links disclaimer</h2>
+        <p>The Site may contain (or you may be sent through the Site) links to other websites or content belonging to or originating from third parties, or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us.</p>
+        <p>We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any information offered by third-party websites linked through the Site or any website or feature linked in any banner or other advertising. We will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or services.</p>
+      </section>
+
+      <section>
+        <h2>3. Professional disclaimer</h2>
+        <p>The Site cannot and does not contain professional architectural, engineering, or design advice. The architectural and design information is provided for general informational and educational purposes only and is not a substitute for professional advice.</p>
+        <p>Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of professional architectural, engineering, or design advice. The use or reliance of any information contained on the Site is solely at your own risk.</p>
+      </section>
+
+      <section>
+        <h2>4. Affiliates disclaimer</h2>
+        <p>The Site may contain links to affiliate websites, and we may receive an affiliate commission for any purchases made by you on the affiliate website using such links. Our affiliates include, but are not limited to, design retailers, book publishers, and software providers.</p>
+        <p>We only recommend products or services that we believe will add value to our readers. However, we are not responsible for the quality, accuracy, or reliability of any products or services offered by our affiliates.</p>
+      </section>
+
+      <section>
+        <h2>5. Testimonials disclaimer</h2>
+        <p>The Site may contain testimonials by users of our products and/or services. These testimonials reflect the real-life experiences and opinions of such users. However, the experiences are personal to those particular users, and may not necessarily be representative of all users of our products and/or services.</p>
+        <p>We do not claim, and you should not assume, that all users will have the same experiences. Your individual results may vary.</p>
+      </section>
+
+      <section>
+        <h2>6. Errors and omissions disclaimer</h2>
+        <p>While we have made every attempt to ensure that the information contained in this Site has been obtained from reliable sources, Fresh Architectural Thinking is not responsible for any errors or omissions, or for the results obtained from the use of this information. All information in this Site is provided "as is", with no guarantee of completeness, accuracy, timeliness, or of the results obtained from the use of this information.</p>
+      </section>
+
+      <section>
+        <h2>7. Fair use disclaimer</h2>
+        <p>The Site may contain copyrighted material the use of which has not always been specifically authorised by the copyright owner. We are making such material available for criticism, comment, news reporting, teaching, scholarship, or research. We believe this constitutes a "fair use" of any such copyrighted material as provided for in section 107 of the US Copyright Law.</p>
+        <p>If you wish to use copyrighted material from the Site for purposes of your own that go beyond "fair use", you must obtain permission from the copyright owner.</p>
+      </section>
+
+      <section>
+        <h2>8. Views expressed disclaimer</h2>
+        <p>The views and opinions expressed on the Site are those of the authors and do not necessarily reflect the official policy or position of Fresh Architectural Thinking. Any content provided by our bloggers or authors is of their opinion and is not intended to malign any religion, ethnic group, club, organisation, company, individual, or anyone or anything.</p>
+      </section>
+
+      <section>
+        <h2>9. Consent</h2>
+        <p>By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
+      </section>
+
+      <section>
+        <h2>10. Contact us</h2>
+        <p>If you have any questions about this Disclaimer, please contact us:</p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:legal@fresharchitecturalthinking.com">legal@fresharchitecturalthinking.com</a><br>
+          <strong>Post:</strong> Fresh Architectural Thinking, Editorial Office, 123 Design Street, 1010 Vienna, Austria
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">FRESH<br>ARCHITECTURAL<br>THINKING</div>
+          <p>An independent journal of interior design and architecture. Published since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html#interior">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#home-design">Home Design</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Fresh Architectural Thinking. All rights reserved.</span>
+        <span>Made with care for readers and the built environment.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

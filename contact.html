@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — FRESH ARCHITECTURAL THINKING</title>
+  <meta name="description" content="Get in touch with the editorial team at Fresh Architectural Thinking. We welcome thoughtful correspondence, corrections, and pitches.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fresharchitecturalthinking.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — FRESH ARCHITECTURAL THINKING">
+  <meta property="og:description" content="Reach the editorial team. We welcome thoughtful correspondence, corrections, and pitches.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fresharchitecturalthinking.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- design tokens (shared with index) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1e1c;
+      --ink-soft: #2c312e;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --border-light: #e2ded8;
+      --border-mid: #cfc9c0;
+      --accent: #7c6e5c;
+      --accent-deep: #5f5343;
+      --muted: #6b6a65;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --max-width: 1280px;
+      --article-width: 720px;
+    }
+
+    html {
+      background: var(--paper);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+      font-weight: 400;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ---------- utility ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 1.25rem; }
+      .article-container { padding: 0 1rem; }
+    }
+
+    /* ---------- header ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border-light);
+      background: var(--paper);
+      padding: 1.75rem 0 0.5rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.75rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .main-nav a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .main-nav a.active {
+      border-bottom-color: var(--ink);
+    }
+
+    .header-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.25rem;
+      padding: 1rem 0 0.75rem;
+      border-top: 1px solid var(--border-light);
+      font-size: 0.8rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .header-meta .editor {
+      font-style: italic;
+    }
+
+    /* ---------- page title ---------- */
+    .page-header {
+      max-width: var(--article-width);
+      margin: 3.5rem auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .page-header h1 {
+      font-family: var(--serif);
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .page-header .subhead {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 2.2rem; }
+      .page-header { margin-top: 2.5rem; }
+    }
+
+    /* ---------- contact layout ---------- */
+    .contact-grid {
+      max-width: var(--article-width);
+      margin: 0 auto 4rem;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .contact-intro p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--ink-soft);
+      margin-bottom: 1rem;
+    }
+
+    .contact-intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* form */
+    .contact-form {
+      border-top: 1px solid var(--border-light);
+      padding-top: 2.5rem;
+    }
+
+    .contact-form h2 {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-form .form-note {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 550px) {
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid var(--border-mid);
+      background: #fff;
+      color: var(--ink);
+      border-radius: 2px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      width: 100%;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent-deep);
+      box-shadow: 0 0 0 2px rgba(124, 110, 92, 0.12);
+    }
+
+    .form-group textarea {
+      min-height: 160px;
+      resize: vertical;
+      line-height: 1.6;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%236b6a65' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .form-consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    .form-consent input[type="checkbox"] {
+      margin-top: 0.25rem;
+      width: 1rem;
+      height: 1rem;
+      flex-shrink: 0;
+      accent-color: var(--ink);
+      cursor: pointer;
+    }
+
+    .form-consent a {
+      border-bottom: 1px solid var(--ink-soft);
+    }
+
+    .form-consent a:hover {
+      color: var(--accent-deep);
+      border-bottom-color: var(--accent-deep);
+    }
+
+    .btn-submit {
+      display: inline-block;
+      background: var(--ink);
+      color: #fff;
+      border: none;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.9rem 2.5rem;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+
+    .btn-submit:hover {
+      background: var(--accent-deep);
+    }
+
+    .btn-submit:focus-visible {
+      outline: 2px solid var(--accent-deep);
+      outline-offset: 2px;
+    }
+
+    .form-success {
+      background: var(--paper-warm);
+      border-left: 3px solid var(--accent-deep);
+      padding: 1.25rem 1.5rem;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      margin-bottom: 2rem;
+      border-radius: 2px;
+      display: none;
+    }
+
+    .form-success.visible {
+      display: block;
+    }
+
+    /* direct contact details */
+    .contact-details {
+      border-top: 1px solid var(--border-light);
+      padding-top: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 550px) {
+      .contact-details {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+    }
+
+    .contact-details h3 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-details p {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    .contact-details a {
+      border-bottom: 1px solid var(--border-mid);
+    }
+
+    .contact-details a:hover {
+      color: var(--accent-deep);
+      border-bottom-color: var(--accent-deep);
+    }
+
+    /* ---------- footer ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border-light);
+      background: var(--paper-warm);
+      padding: 3rem 0 2.5rem;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand + p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h5 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent-deep);
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--muted);
+      gap: 1rem;
+    }
+
+    /* skip link */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--ink);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      z-index: 100;
+      font-size: 0.85rem;
+    }
+
+    .skip-link:focus {
+      left: 0;
+    }
+
+    /* responsive nav */
+    @media (max-width: 600px) {
+      .main-nav ul { gap: 1rem; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          FRESH<br>ARCHITECTURAL<br>THINKING
+          <span>INTERIOR &amp; ARCHITECTURE JOURNAL</span>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-meta">
+        <span class="editor">Editor: Elena Marchetti</span>
+        <span>Independent publication · Est. 2018</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main">
+    <!-- page title -->
+    <div class="page-header">
+      <h1>Contact</h1>
+      <p class="subhead">We welcome thoughtful correspondence, corrections, and pitches. Write to us — a human reads every message.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- intro text -->
+      <div class="contact-intro">
+        <p>Fresh Architectural Thinking is an independent editorial publication. We are a small team, and we read everything that arrives in our inbox — whether it is a detailed correction, a story tip, a question about a project, or a note about how an article helped you.</p>
+        <p>For pitches, please include a short summary and a link to previous work. We are especially interested in stories about materials, passive design, small-space planning, and the practical realities of building or renovating.</p>
+      </div>
+
+      <!-- contact form -->
+      <div class="contact-form">
+        <h2>Send a message</h2>
+        <p class="form-note">Fields marked with * are required.</p>
+
+        <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+          Thank you — your message has been sent. We aim to respond within five working days.
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name *</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address *</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General enquiry</option>
+              <option value="pitch">Story pitch</option>
+              <option value="correction">Correction or feedback</option>
+              <option value="permissions">Permissions &amp; syndication</option>
+              <option value="advertising">Advertising (we don't accept sponsored content — but ask us why)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your message *</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+
+          <div class="form-consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I agree that my message and email address will be stored solely for the purpose of responding to this enquiry. See our <a href="privacy.html">Privacy Policy</a>. *</label>
+          </div>
+
+          <button type="submit" class="btn-submit">Send message</button>
+        </form>
+      </div>
+
+      <!-- direct contact details -->
+      <div class="contact-details">
+        <div>
+          <h3>Editorial</h3>
+          <p>
+            For story pitches, corrections, and general editorial correspondence:<br>
+            <a href="mailto:editor@fresharchitecturalthinking.com">editor@fresharchitecturalthinking.com</a>
+          </p>
+        </div>
+        <div>
+          <h3>Rights &amp; permissions</h3>
+          <p>
+            For syndication, reproduction requests, and copyright:<br>
+            <a href="mailto:rights@fresharchitecturalthinking.com">rights@fresharchitecturalthinking.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">FRESH<br>ARCHITECTURAL<br>THINKING</div>
+          <p>An independent journal of interior design and architecture. Published since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html#interior">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#home-design">Home Design</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Fresh Architectural Thinking. All rights reserved.</span>
+        <span>Made with care for readers and the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      const form = document.getElementById('contactForm');
+      const successMessage = document.getElementById('formSuccess');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // simple client-side validation
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const message = document.getElementById('message');
+        const consent = document.getElementById('consent');
+
+        let valid = true;
+
+        [name, email, message, consent].forEach(field => {
+          field.style.borderColor = '';
+          if (!field.value.trim() || (field.type === 'checkbox' && !field.checked)) {
+            field.style.borderColor = '#b35a4a';
+            valid = false;
+          }
+        });
+
+        // basic email pattern check
+        if (email.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+          email.style.borderColor = '#b35a4a';
+          valid = false;
+        }
+
+        if (!valid) {
+          // focus first invalid field
+          const firstInvalid = [name, email, message, consent].find(f => {
+            if (f.type === 'checkbox') return !f.checked;
+            return !f.value.trim() || (f === email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value.trim()));
+          });
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+
+        // simulate successful submission
+        form.style.display = 'none';
+        successMessage.classList.add('visible');
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      // clear error styling on input
+      ['name', 'email', 'message'].forEach(id => {
+        document.getElementById(id).addEventListener('input', function() {
+          this.style.borderColor = '';
+        });
+      });
+      document.getElementById('consent').addEventListener('change', function() {
+        this.style.borderColor = '';
+      });
+    })();
+  </script>
+</body>
+</html>

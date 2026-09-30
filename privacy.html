@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — FRESH ARCHITECTURAL THINKING</title>
+  <meta name="description" content="Privacy Policy for Fresh Architectural Thinking. How we handle your data, cookies, and your rights.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fresharchitecturalthinking.com/privacy.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy — FRESH ARCHITECTURAL THINKING">
+  <meta property="og:description" content="How we handle your data, cookies, and your rights.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fresharchitecturalthinking.com/privacy.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- design tokens (shared with index) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1a1e1c;
+      --ink-soft: #2c312e;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --border-light: #e2ded8;
+      --border-mid: #cfc9c0;
+      --accent: #7c6e5c;
+      --accent-deep: #5f5343;
+      --muted: #6b6a65;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --max-width: 1280px;
+      --article-width: 720px;
+    }
+
+    html {
+      background: var(--paper);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+      font-weight: 400;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ---------- utility ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .article-container {
+      max-width: var(--article-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 1.25rem; }
+      .article-container { padding: 0 1rem; }
+    }
+
+    /* ---------- header ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border-light);
+      background: var(--paper);
+      padding: 1.75rem 0 0.5rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .logo span {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.75rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .main-nav a {
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .main-nav a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .main-nav a.active {
+      border-bottom-color: var(--ink);
+    }
+
+    .header-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.25rem;
+      padding: 1rem 0 0.75rem;
+      border-top: 1px solid var(--border-light);
+      font-size: 0.8rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .header-meta .editor {
+      font-style: italic;
+    }
+
+    /* ---------- page title ---------- */
+    .page-header {
+      max-width: var(--article-width);
+      margin: 3.5rem auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .page-header h1 {
+      font-family: var(--serif);
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .page-header .subhead {
+      font-size: 1.1rem;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    .page-header .last-updated {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .page-header h1 { font-size: 2.2rem; }
+      .page-header { margin-top: 2.5rem; }
+    }
+
+    /* ---------- legal / privacy content ---------- */
+    .legal-content {
+      max-width: var(--article-width);
+      margin: 0 auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .legal-content section {
+      margin-bottom: 2.5rem;
+    }
+
+    .legal-content h2 {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+      color: var(--ink);
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 0.5rem;
+    }
+
+    .legal-content h3 {
+      font-family: var(--sans);
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin: 1.75rem 0 0.75rem;
+      color: var(--ink-soft);
+    }
+
+    .legal-content p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-soft);
+      margin-bottom: 1.25rem;
+    }
+
+    .legal-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-content ul, .legal-content ol {
+      margin: 0 0 1.5rem 1.5rem;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--ink-soft);
+    }
+
+    .legal-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-content a {
+      border-bottom: 1px solid var(--border-mid);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .legal-content a:hover {
+      color: var(--accent-deep);
+      border-bottom-color: var(--accent-deep);
+    }
+
+    .legal-content .highlight-box {
+      background: var(--paper-warm);
+      border-left: 3px solid var(--accent-deep);
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+      border-radius: 2px;
+      font-size: 0.98rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    .legal-content .highlight-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .legal-content th {
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0.6rem 0.75rem 0.6rem 0;
+      border-bottom: 1px solid var(--border-mid);
+    }
+
+    .legal-content td {
+      padding: 0.7rem 0.75rem 0.7rem 0;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--ink-soft);
+      vertical-align: top;
+    }
+
+    .legal-content td:first-child {
+      font-weight: 500;
+      color: var(--ink);
+      width: 30%;
+    }
+
+    @media (max-width: 550px) {
+      .legal-content table,
+      .legal-content thead,
+      .legal-content tbody,
+      .legal-content th,
+      .legal-content td,
+      .legal-content tr {
+        display: block;
+      }
+      .legal-content thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      .legal-content tr {
+        border: 1px solid var(--border-light);
+        margin-bottom: 1rem;
+        border-radius: 2px;
+        padding: 0.5rem;
+      }
+      .legal-content td {
+        border: none;
+        padding: 0.4rem 0.5rem;
+        position: relative;
+        padding-left: 0;
+      }
+      .legal-content td:first-child {
+        width: 100%;
+        font-weight: 600;
+        color: var(--ink);
+        padding-top: 0.75rem;
+        padding-bottom: 0.25rem;
+      }
+      .legal-content td:last-child {
+        padding-bottom: 0.75rem;
+      }
+    }
+
+    /* ---------- footer ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border-light);
+      background: var(--paper-warm);
+      padding: 3rem 0 2.5rem;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand + p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h5 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent-deep);
+    }
+
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--muted);
+      gap: 1rem;
+    }
+
+    /* skip link */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--ink);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      z-index: 100;
+      font-size: 0.85rem;
+    }
+
+    .skip-link:focus {
+      left: 0;
+    }
+
+    /* responsive nav */
+    @media (max-width: 600px) {
+      .main-nav ul { gap: 1rem; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          FRESH<br>ARCHITECTURAL<br>THINKING
+          <span>INTERIOR &amp; ARCHITECTURE JOURNAL</span>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-meta">
+        <span class="editor">Editor: Elena Marchetti</span>
+        <span>Independent publication · Est. 2018</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main">
+    <!-- page title -->
+    <div class="page-header">
+      <h1>Privacy Policy</h1>
+      <p class="subhead">How we collect, use, and protect your personal information. We keep it simple and transparent.</p>
+      <p class="last-updated">Last updated: 1 March 2025</p>
+    </div>
+
+    <!-- privacy content -->
+    <div class="legal-content">
+      <section>
+        <h2>1. Who we are</h2>
+        <p>Fresh Architectural Thinking ("we", "us", "our") is an independent editorial publication based in the European Union. We are the data controller for the personal information collected through this website (<a href="https://fresharchitecturalthinking.com">fresharchitecturalthinking.com</a>).</p>
+        <p>We are committed to protecting your privacy and handling your data in an open and transparent manner, in accordance with the General Data Protection Regulation (GDPR) and other applicable data protection laws.</p>
+      </section>
+
+      <section>
+        <h2>2. What data we collect</h2>
+        <p>We only collect the data we need. Depending on how you interact with us, this may include:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Type of data</th>
+              <th>When collected</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name and email address</td>
+              <td>When you submit the contact form or subscribe to our newsletter.</td>
+            </tr>
+            <tr>
+              <td>Message content</td>
+              <td>When you send us an enquiry, pitch, or correction via the contact form or email.</td>
+            </tr>
+            <tr>
+              <td>Technical data (IP address, browser type, device)</td>
+              <td>Automatically collected when you visit the site, via server logs and analytics cookies.</td>
+            </tr>
+            <tr>
+              <td>Usage data (pages visited, time on site)</td>
+              <td>Collected through privacy-friendly analytics tools (see our <a href="cookies.html">Cookies Policy</a>).</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>We do not collect sensitive personal data (such as health, political opinions, or biometric data) and we do not knowingly collect data from children under 16.</p>
+      </section>
+
+      <section>
+        <h2>3. How we use your data</h2>
+        <p>We use your personal information for the following purposes:</p>
+        <ul>
+          <li><strong>To respond to your enquiry</strong> — if you contact us, we use your name and email address to reply. This is based on our legitimate interest in communicating with our readers and contributors.</li>
+          <li><strong>To send our newsletter</strong> — if you subscribe, we use your email address to send you editorial updates. You can unsubscribe at any time via the link in every newsletter.</li>
+          <li><strong>To improve our website</strong> — we use anonymised usage data to understand how readers navigate the site and to make improvements. This is based on your consent (where required) or our legitimate interest in operating a functional publication.</li>
+          <li><strong>To comply with legal obligations</strong> — in rare cases, we may need to retain or disclose data to comply with the law.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Legal basis for processing</h2>
+        <p>Under GDPR, we rely on the following legal bases for processing your data:</p>
+        <ul>
+          <li><strong>Consent</strong> — for newsletter subscriptions and non-essential cookies. You may withdraw consent at any time.</li>
+          <li><strong>Legitimate interests</strong> — for responding to enquiries, maintaining the security of our website, and analysing site usage to improve our content.</li>
+          <li><strong>Legal obligation</strong> — where we are required to retain or share data by law.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. How long we keep your data</h2>
+        <p>We keep your personal data only as long as necessary for the purposes described above:</p>
+        <ul>
+          <li><strong>Contact form messages:</strong> kept for up to 24 months, then deleted.</li>
+          <li><strong>Newsletter subscriptions:</strong> kept until you unsubscribe, plus 3 months for administrative purposes.</li>
+          <li><strong>Analytics data:</strong> anonymised or deleted after 14 months.</li>
+          <li><strong>Server logs:</strong> kept for up to 90 days.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Who we share your data with</h2>
+        <p>We do not sell your personal data. We may share it with trusted service providers who help us run the publication:</p>
+        <ul>
+          <li><strong>Email service provider</strong> — for sending newsletters and managing contact form messages.</li>
+          <li><strong>Hosting provider</strong> — for storing the website and server logs.</li>
+          <li><strong>Analytics provider</strong> — we use a privacy-focused analytics tool that does not track individual users across sites.</li>
+        </ul>
+        <p>All service providers are bound by data processing agreements and only process your data on our instructions. Some may be located outside the EU; in such cases, we ensure appropriate safeguards are in place (such as Standard Contractual Clauses).</p>
+      </section>
+
+      <section>
+        <h2>7. Your rights</h2>
+        <p>Under GDPR, you have the following rights regarding your personal data:</p>
+        <ul>
+          <li><strong>Right of access</strong> — you can request a copy of the data we hold about you.</li>
+          <li><strong>Right to rectification</strong> — you can ask us to correct inaccurate or incomplete data.</li>
+          <li><strong>Right to erasure</strong> — you can ask us to delete your data, subject to legal obligations.</li>
+          <li><strong>Right to restrict processing</strong> — you can ask us to limit how we use your data.</li>
+          <li><strong>Right to data portability</strong> — you can request your data in a structured, machine-readable format.</li>
+          <li><strong>Right to object</strong> — you can object to processing based on legitimate interests.</li>
+          <li><strong>Right to withdraw consent</strong> — where processing is based on consent, you can withdraw it at any time.</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@fresharchitecturalthinking.com">privacy@fresharchitecturalthinking.com</a>. We will respond within 30 days.</p>
+        <p>You also have the right to lodge a complaint with your local data protection authority.</p>
+      </section>
+
+      <section>
+        <h2>8. Cookies and tracking</h2>
+        <p>We use a minimal set of cookies to ensure the website functions properly and to understand how readers use our content. For full details, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+        <div class="highlight-box">
+          <p>We do not use advertising cookies, and we do not sell your data to third parties. Our analytics are configured to anonymise IP addresses and respect your privacy.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>9. Security</h2>
+        <p>We take reasonable technical and organisational measures to protect your personal data from unauthorised access, loss, or misuse. This includes encryption in transit (HTTPS), restricted access to personal data, and regular security reviews.</p>
+        <p>However, no method of transmission over the internet is completely secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+      </section>
+
+      <section>
+        <h2>10. Changes to this policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. The "last updated" date at the top of this page indicates when the policy was last revised. We encourage you to review this page periodically.</p>
+        <p>If we make significant changes, we will notify you by email (if you are subscribed) or by a prominent notice on the website.</p>
+      </section>
+
+      <section>
+        <h2>11. Contact us</h2>
+        <p>If you have any questions about this Privacy Policy or how we handle your data, please contact our data protection contact:</p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:privacy@fresharchitecturalthinking.com">privacy@fresharchitecturalthinking.com</a><br>
+          <strong>Post:</strong> Fresh Architectural Thinking, Editorial Office, 123 Design Street, 1010 Vienna, Austria
+        </p>
+        <p>For general editorial enquiries, please use the <a href="contact.html">contact form</a> or write to <a href="mailto:editor@fresharchitecturalthinking.com">editor@fresharchitecturalthinking.com</a>.</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">FRESH<br>ARCHITECTURAL<br>THINKING</div>
+          <p>An independent journal of interior design and architecture. Published since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html#interior">Interior Design</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#home-design">Home Design</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#lighting">Lighting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Fresh Architectural Thinking. All rights reserved.</span>
+        <span>Made with care for readers and the built environment.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
